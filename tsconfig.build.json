@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "declaration": true,
+    "outDir": "dist"
+  },
+  "files": ["src/cli.ts", "src/index.ts"]
+}

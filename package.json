@@ -1,0 +1,39 @@
+{
+  "name": "chchyomi",
+  "version": "0.0.1",
+  "author": "vipzero",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "chch": "^1.0.2",
+    "meow": "^5.0.0",
+    "openjtalk": "^0.1.6",
+    "public-ip": "^3.1.0"
+  },
+  "devDependencies": {
+    "@elzup/eslint-config": "^1.0.2",
+    "@types/node": "^12.6.9",
+    "eslint": "^6.4.0",
+    "husky": "^3.0.2",
+    "prettier": "^1.18.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "lint-staged": {
+    "scripts/**/*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "bin": "dist/cli.js",
+  "scripts": {
+    "cli": "ts-node src/cli.ts",
+    "build": "tsc --build tsconfig.build.json",
+    "deploy": "yarn build && yarn publish"
+  }
+}
