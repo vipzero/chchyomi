@@ -10,13 +10,13 @@
     "public-ip": "^3.1.0"
   },
   "devDependencies": {
-    "@elzup/eslint-config": "^1.0.2",
-    "@types/node": "^12.6.9",
-    "eslint": "^6.4.0",
-    "husky": "^3.0.2",
-    "prettier": "^1.18.2",
-    "ts-node": "^8.3.0",
-    "typescript": "^3.5.3"
+    "@elzup/eslint-config": "1.0.2",
+    "@types/node": "12.7.5",
+    "eslint": "6.4.0",
+    "husky": "3.0.5",
+    "prettier": "1.18.2",
+    "ts-node": "8.4.1",
+    "typescript": "3.6.3"
   },
   "lint-staged": {
     "scripts/**/*.ts": [
